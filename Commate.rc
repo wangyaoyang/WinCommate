@@ -1,0 +1,851 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\Commate.rc2""  // ·? Microsoft Visual C++ ±à?-×ê?′\r\n"
+    "#include ""afxres.rc""         // ±ê×?×é?t\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Commate.ico"
+IDR_ProbeTYPE           ICON                    "res\\CommateDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDB_BITMAP_LED          BITMAP                  "res\\bitmapLed.bmp"
+IDR_TOOLBAR_INPUT       BITMAP                  "res\\toolbarInput.bmp"
+IDB_BITMAP_STEPS        BITMAP                  "res\\bitmap_l.bmp"
+IDB_BITMAP_SEND_RECV    BITMAP                  "res\\bitmap_s.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 16, 16
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_SEND_VIEW_CALCULATER
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+    BUTTON      ID_CONTEXT_HELP
+    SEPARATOR
+    BUTTON      ID_APP_EXIT
+END
+
+IDR_TOOLBAR_INPUT TOOLBAR 15, 16
+BEGIN
+    BUTTON      ID_SEND_VIEW_TXT_LF
+    BUTTON      ID_SEND_VIEW_ASCII
+    BUTTON      ID_SEND_VIEW_HEX
+    SEPARATOR
+    BUTTON      ID_SEND_VIEW_CHECKSUM
+    BUTTON      ID_SEND_VIEW_CHECKCRC
+    SEPARATOR
+    BUTTON      ID_SEND_VIEW_ECHO
+    BUTTON      ID_SEND_VIEW_EDIT
+    BUTTON      ID_RECV_LIST_VIEW_HEX
+    BUTTON      ID_RECV_LIST_VIEW_CLEAR
+    BUTTON      ID_VIEW_SIGNAL
+    BUTTON      ID_VIEW_RUNTIME
+    BUTTON      ID_VIEW_SHOWDATA
+    BUTTON      ID_VIEW_COLOUR
+    SEPARATOR
+    BUTTON      ID_POPUP_EXEC_LOAD
+    BUTTON      ID_POPUP_EXEC_EXECUTE
+    BUTTON      ID_POPUP_EXEC_STOP
+    SEPARATOR
+    BUTTON      ID_POPUP_EXEC_DEBUG
+    BUTTON      ID_POPUP_EXEC_SEL_ALL
+    BUTTON      ID_POPUP_EXEC_CLEAR
+    BUTTON      ID_POPUP_EXEC_CLEAR_TRACE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "新建\tCtrl+N(&N)",              ID_FILE_NEW
+        MENUITEM "打开...\tCtrl+O(&O)",           ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "最近的文件",                       ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "关闭(&C)",                      ID_FILE_CLOSE
+        MENUITEM "退出(&X)",                      ID_APP_EXIT
+    END
+    POPUP "视图(&V)"
+    BEGIN
+        MENUITEM "工具栏(&T)",                     ID_VIEW_TOOLBAR
+        MENUITEM "状态栏(&S)",                     ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "大图标(&G)",                     ID_VIEW_LARGEICON
+        MENUITEM "小图标(&M)",                     ID_VIEW_SMALLICON
+        MENUITEM "列表(&L)",                      ID_VIEW_LIST
+        MENUITEM "详细信息(&D)",                    ID_VIEW_DETAILS
+        MENUITEM SEPARATOR
+        POPUP "排列图标(&I)"
+        BEGIN
+            MENUITEM "按名称(&N)",                     ID_VIEW_BYNAME
+            MENUITEM SEPARATOR
+            MENUITEM "自动排列(&A)",                    ID_VIEW_AUTOARRANGE
+        END
+        MENUITEM "对齐图标(&E)",                    ID_VIEW_LINEUP
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "帮助主题(&H)",                    ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "关于 Commate(&A)...",           ID_APP_ABOUT
+    END
+END
+
+IDR_ProbeTYPE MENU
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "新建\tCtrl+N(&N)",              ID_FILE_NEW
+        MENUITEM "打开...\tCtrl+O(&O)",           ID_FILE_OPEN
+        MENUITEM "关闭(&C)",                      ID_FILE_CLOSE
+        MENUITEM "保存\tCtrl+S(&S)",              ID_FILE_SAVE
+        MENUITEM "另存为(&A)...",                  ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "最近的文件",                       ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                      ID_APP_EXIT
+    END
+    POPUP "命令"
+    BEGIN
+        MENUITEM "按十六进制发送",                     ID_SEND_VIEW_HEX
+        MENUITEM "按ASCII码发送",                   ID_SEND_VIEW_ASCII
+        MENUITEM "计算校验和",                       ID_SEND_VIEW_CHECKSUM
+        MENUITEM "计算CRC校验",                     ID_SEND_VIEW_CHECKCRC
+        MENUITEM SEPARATOR
+        MENUITEM "以文本方式显示",                     ID_RECV_LIST_VIEW_HEX
+        MENUITEM "计算器",                         ID_SEND_VIEW_CALCULATER
+        MENUITEM "清除显示",                        ID_RECV_LIST_VIEW_CLEAR
+    END
+    POPUP "程序(&P)"
+    BEGIN
+        MENUITEM "加载程序",                        ID_POPUP_EXEC_LOAD
+        MENUITEM SEPARATOR
+        MENUITEM "开始运行",                        ID_POPUP_EXEC_EXECUTE
+        MENUITEM "停止运行",                        ID_POPUP_EXEC_STOP
+        MENUITEM SEPARATOR
+        MENUITEM "调试模式",                        ID_POPUP_EXEC_DEBUG
+        MENUITEM "设置断点",                        ID_POPUP_EXEC_SEL_ALL
+        MENUITEM "继续执行",                        ID_POPUP_EXEC_CLEAR
+        MENUITEM "清理足迹",                        ID_POPUP_EXEC_CLEAR_TRACE
+    END
+    POPUP "编辑(&E)"
+    BEGIN
+        MENUITEM "撤消\tCtrl+Z(&U)",              ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "剪切\tCtrl+X(&T)",              ID_EDIT_CUT
+        MENUITEM "复制\tCtrl+C(&C)",              ID_EDIT_COPY
+        MENUITEM "粘贴\tCtrl+V(&P)",              ID_EDIT_PASTE
+        MENUITEM "查找\tCtrl+F(&F)",              ID_EDIT_FIND
+        MENUITEM "替换\tCtrl+R(&R)",              ID_EDIT_REPLACE
+    END
+    POPUP "视图(&V)"
+    BEGIN
+        MENUITEM "工具栏(&T)",                     ID_VIEW_TOOLBAR
+        MENUITEM "状态栏(&S)",                     ID_VIEW_STATUS_BAR
+        MENUITEM "数据显示窗口(&P)",                  ID_VIEW_SHOWDATA
+        MENUITEM "模拟程序窗口(&P)",                  ID_VIEW_RUNTIME
+        MENUITEM "通信参数窗口(&A)",                  ID_VIEW_SIGNAL
+        MENUITEM "窗口颜色(&C)",                    ID_VIEW_COLOUR
+        MENUITEM "窗口刷新(&R)",                    ID_VIEW_REFRESH
+    END
+    POPUP "窗口(&W)"
+    BEGIN
+        MENUITEM "新建窗口(&N)",                    ID_WINDOW_NEW
+        MENUITEM "层叠(&C)",                      ID_WINDOW_CASCADE
+        MENUITEM "平铺(&T)",                      ID_WINDOW_TILE_HORZ
+        MENUITEM "排列图标(&A)",                    ID_WINDOW_ARRANGE
+        MENUITEM "拆分(&P)",                      ID_WINDOW_SPLIT
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "帮助主题(&H)",                    ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "关于 Commate(&A)...",           ID_APP_ABOUT
+    END
+END
+
+CG_IDR_POPUP_C232PROGRAM_VIEW MENU
+BEGIN
+    POPUP "_POPUP_"
+    BEGIN
+        MENUITEM "发送选中的文本",                     32775
+        MENUITEM "发送一行文本+回车换行",                 ID_SEND_VIEW_TXT_LF
+        MENUITEM "发送一行文本+换行",                   ID_SEND_VIEW_ASCII_LINE
+        MENUITEM "按十六进制发送",                     ID_SEND_VIEW_HEX
+        MENUITEM SEPARATOR
+        MENUITEM "交互命令模式",                      ID_SEND_VIEW_ECHO
+        MENUITEM "交互编辑模式",                      ID_SEND_VIEW_EDIT
+        MENUITEM "循环发送",                        ID_SEND_VIEW_CYCLESEND, GRAYED
+        MENUITEM "取消循环",                        ID_SEND_VIEW_CANCEL
+        MENUITEM SEPARATOR
+        MENUITEM "转换为十六进制",                     ID_SEND_VIEW_TRANS_HEX
+        MENUITEM "转换为ASCII码",                   ID_SEND_VIEW_TRANS_ASCII
+        MENUITEM SEPARATOR
+        MENUITEM "计算校验和",                       ID_SEND_VIEW_CHECKSUM
+        MENUITEM "计算校验和补码",                     ID_SEND_VIEW_CHECKSUM2
+        MENUITEM "计算CRC校验",                     ID_SEND_VIEW_CHECKCRC
+        MENUITEM SEPARATOR
+        MENUITEM "选择全部文本",                      ID_SENDVIEW_SEL_ALL
+        MENUITEM "复制被选文本",                      ID_EDIT_COPY
+        MENUITEM "清除全部文本",                      ID_SENDVIEW_CLEAR
+        MENUITEM "粘贴",                          ID_EDIT_PASTE
+    END
+END
+
+CG_IDR_POPUP_RECV_LIST_VIEW MENU
+BEGIN
+    POPUP "_POPUP_"
+    BEGIN
+        MENUITEM "以文本方式显示",                     ID_RECV_LIST_VIEW_HEX
+        MENUITEM "清除窗口内容",                      ID_RECV_LIST_VIEW_CLEAR
+        MENUITEM "选择全部内容",                      ID_RECV_LIST_VIEW_SELECT_ALL
+        MENUITEM "复制数据文本",                      ID_RECV_LIST_VIEW_COPY
+        MENUITEM "保存数据",                        ID_RECV_LIST_VIEW_SAVELOG
+        MENUITEM "加载数据",                        ID_RECV_LIST_VIEW_OPENLOG
+        MENUITEM "分析数据",                        ID_RECV_LIST_VIEW_REVIEW
+        MENUITEM "背景颜色",                        ID_RECV_LIST_VIEW_COLOR
+        MENUITEM "地址过滤",                        ID_RECV_LIST_VIEW_FILTER
+    END
+END
+
+IDR_MENU_RECV_BUFF MENU
+BEGIN
+    MENUITEM "刷新",                          ID_RECV_BUFF_REFRESH
+    MENUITEM SEPARATOR
+    POPUP "显示方式&M"
+    BEGIN
+        MENUITEM "Ascii/Hex 显示",                ID_RECV_BUFF_ASCII_HEX
+        MENUITEM "只显示接收报文",                     ID_RECV_BUFF_FILTER_RECV
+        MENUITEM "只显示发送报文",                     32799
+        MENUITEM "显示所有报文",                      32800
+    END
+    MENUITEM "删除 &X",                       ID_RECV_BUFF_DELETE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    VK_F1,          ID_CONTEXT_HELP,        VIRTKEY, SHIFT, NOINVERT
+    "C",            ID_EDIT_COPY,           VIRTKEY, SHIFT, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    VK_F1,          ID_HELP,                VIRTKEY, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 205, 68
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 Commate"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,7,7,18,18
+    LTEXT           "Commate Version ２.０",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 王耀阳 2008",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,148,45,50,16,WS_GROUP
+END
+
+IDD_PORT_SETTING DIALOGEX 0, 0, 257, 171
+STYLE DS_SYSMODAL | DS_SETFONT | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "通信设置："
+FONT 9, "宋体", 0, 0, 0x0
+BEGIN
+    CONTROL         "RS-232模式",IDC_RADIO_SERIAL,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,7,33,54,10
+    CONTROL         "TCP/IP模式",IDC_RADIO_TCPIP,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,7,93,56,10
+    CONTROL         "UDP/IP模式",IDC_RADIO_UDPIP,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,7,109,56,10
+    COMBOBOX        IDC_CURRENT_PORT,108,18,42,174,CBS_DROPDOWNLIST | WS_GROUP | WS_TABSTOP
+    COMBOBOX        IDC_BOUD_RATE,108,33,42,112,CBS_DROPDOWNLIST | WS_TABSTOP
+    COMBOBOX        IDC_BYTE_SIZE,108,48,42,57,CBS_DROPDOWNLIST | WS_TABSTOP
+    CONTROL         "1",IDC_STOP1,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,161,25,24,9
+    CONTROL         "1.5",IDC_STOP15,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,161,37,24,9
+    CONTROL         "2",IDC_STOP2,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,161,49,24,9
+    CONTROL         "无校验",IDC_PARITY_NO,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,202,25,35,9
+    CONTROL         "奇校验",IDC_PARITYODD,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,202,37,35,9
+    CONTROL         "偶校验",IDC_PARITYEVEN,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,202,49,35,9
+    CONTROL         "",IDC_SETTING_IPADDRESS,"SysIPAddress32",WS_GROUP | WS_TABSTOP,71,81,101,13
+    EDITTEXT        IDC_EDIT_LOCAL_PORT,216,75,28,13,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "目的端口",IDC_STATIC,182,92,33,8
+    EDITTEXT        IDC_EDIT_TCPIP_PORT,216,89,28,13,ES_AUTOHSCROLL | ES_NUMBER
+    DEFPUSHBUTTON   "连接",IDOK,203,146,47,14,WS_GROUP
+    PUSHBUTTON      "断开",IDCANCEL,7,146,47,14
+    LTEXT           "端　口:",IDC_STATIC,73,20,29,8
+    LTEXT           "波特率:",IDC_STATIC,73,37,29,8
+    LTEXT           "数据位:",IDC_STATIC,73,52,29,8
+    GROUPBOX        "停止位",IDC_STATIC,155,11,43,53
+    GROUPBOX        "校验位",IDC_STATIC,199,11,43,53
+    LTEXT           "本地端口",IDC_STATIC,182,78,33,8
+    CONTROL         "转发",IDC_CHECK_IP_TRANSFER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,72,114,32,10
+    CONTROL         "",IDC_IPADDRESS_TERM1,"SysIPAddress32",WS_TABSTOP,113,105,101,13
+    CONTROL         "",IDC_IPADDRESS_TERM2,"SysIPAddress32",WS_TABSTOP,113,121,101,13
+    EDITTEXT        IDC_EDIT_IP_PORT1,216,105,28,13,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_IP_PORT2,216,121,28,13,ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "",IDC_STATIC,65,1,185,67
+    GROUPBOX        "",IDC_STATIC,65,68,185,73
+END
+
+IDD_PORT_RECEIVED DIALOGEX 0, 0, 186, 90
+STYLE DS_SETFONT | WS_CHILD | WS_SYSMENU
+FONT 6, "宋体", 400, 0, 0x86
+BEGIN
+    CONTROL         "",IDC_RICHEDIT_RECEIVED,"RichEdit20W",WS_BORDER | WS_TABSTOP | 0x80,7,7,172,76
+END
+
+IDD_CALCULATE DIALOGEX 0, 0, 252, 130
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "表达式计算"
+FONT 9, "宋体", 400, 0, 0x86
+BEGIN
+    EDITTEXT        IDC_EDIT_CALCULATE_FORMULA,7,7,238,99,ES_MULTILINE | ES_AUTOVSCROLL | WS_VSCROLL
+    DEFPUSHBUTTON   "=",IDC_BUTTON_EXECUTE,7,109,33,14
+    EDITTEXT        IDC_EDIT_CALCULATE_RESULT,47,109,198,14,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_CONVERTION_DLG DIALOGEX 0, 0, 373, 209
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_CONVERTION,0,0,372,208,ES_MULTILINE | ES_AUTOVSCROLL
+END
+
+IDD_TITLE_BAR DIALOGEX 0, 0, 186, 32
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_VISIBLE | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_SEND_RECYCYLE DIALOGEX 0, 0, 166, 57
+STYLE DS_SYSMODAL | DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "循环发送设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "按ASCII码发送",IDC_RADIO_ASCII,"Button",BS_AUTORADIOBUTTON | WS_GROUP,7,7,67,10
+    CONTROL         "按十六进制发送",IDC_RADIO_HEX,"Button",BS_AUTORADIOBUTTON,7,20,72,10
+    EDITTEXT        IDC_EDIT_CYCLE_TIMER,88,17,71,12,ES_AUTOHSCROLL | ES_NUMBER
+    DEFPUSHBUTTON   "开始循环",IDOK,7,36,50,14
+    PUSHBUTTON      "停止循环",IDNO,109,36,50,14
+    LTEXT           "循环发送周期(ms)：",IDC_STATIC,87,7,72,11
+END
+
+IDD_RECV_BUFF DIALOGEX 0, 0, 365, 202
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "数据缓冲区"
+MENU IDR_MENU_RECV_BUFF
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST_RECV_DATA,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,0,0,148,202
+    EDITTEXT        IDC_EDIT_RECV_DATA,149,0,216,202,ES_MULTILINE | WS_VSCROLL
+END
+
+IDD_DISPLAY DIALOGEX 0, 0, 295, 229
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "地址过滤设置"
+FONT 10, "宋体", 400, 0, 0x86
+BEGIN
+    PUSHBUTTON      "取消",IDCANCEL,248,7,40,14
+    CONTROL         "",IDC_FILTER_IP,"SysIPAddress32",WS_TABSTOP,7,7,100,15
+    PUSHBUTTON      "增加",IDC_IP_INSERT,115,7,40,14
+    PUSHBUTTON      "删除",IDC_IP_DELETE,157,7,40,14
+    PUSHBUTTON      "修改",IDC_IP_MODIFY,199,7,40,14
+    CONTROL         "",IDC_LIST_IP_FILTERS,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,26,281,196
+END
+
+IDD_IP_FILTER DIALOGEX 0, 0, 172, 242
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "地址过滤设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,115,221,50,14
+    CONTROL         "",IDC_FILTER_IP,"SysIPAddress32",WS_TABSTOP,7,7,100,15
+    PUSHBUTTON      "增加",IDC_FILTER_INSERT,115,7,50,14
+    PUSHBUTTON      "删除",IDC_FILTER_DELETE,115,26,50,14
+    PUSHBUTTON      "修改",IDC_FILTER_MODIFY,115,42,50,14
+    CONTROL         "",IDC_LIST_FILTER,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,30,100,205
+    CONTROL         "简化模式",IDC_CHECK_SIMPLIFY_MODE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,116,65,48,10
+END
+
+IDD_DIALOG_ETH_SELECT DIALOGEX 0, 0, 215, 106
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_OVERLAPPEDWINDOW
+CAPTION "Specify network adapter"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_COMBO_ETH_IFS,7,7,201,92,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Cancel",IDCANCEL,54,85,50,14
+    DEFPUSHBUTTON   "Select",IDOK,111,85,50,14
+    EDITTEXT        IDC_EDIT_IF_DETAILS,7,22,201,58,ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "Commate.exe"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "Commate.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "翻译", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 198
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 61
+    END
+
+    IDD_PORT_SETTING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 250
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 164
+    END
+
+    IDD_PORT_RECEIVED, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_CALCULATE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 245
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 123
+    END
+
+    IDD_CONVERTION_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 366
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 202
+    END
+
+    IDD_TITLE_BAR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 25
+    END
+
+    IDD_SEND_RECYCYLE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 159
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 50
+    END
+
+    IDD_RECV_BUFF, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 358
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 195
+    END
+
+    IDD_DISPLAY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 288
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 222
+    END
+
+    IDD_IP_FILTER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 165
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 235
+    END
+
+    IDD_DIALOG_ETH_SELECT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 208
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 99
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_PORT_SETTING DLGINIT
+BEGIN
+    IDC_CURRENT_PORT, 0x403, 2, 0
+0x0031, 
+    IDC_CURRENT_PORT, 0x403, 2, 0
+0x0032, 
+    IDC_CURRENT_PORT, 0x403, 2, 0
+0x0033, 
+    IDC_CURRENT_PORT, 0x403, 2, 0
+0x0034, 
+    IDC_CURRENT_PORT, 0x403, 2, 0
+0x0035, 
+    IDC_CURRENT_PORT, 0x403, 2, 0
+0x0036, 
+    IDC_CURRENT_PORT, 0x403, 2, 0
+0x0037, 
+    IDC_CURRENT_PORT, 0x403, 2, 0
+0x0038, 
+    IDC_CURRENT_PORT, 0x403, 2, 0
+0x0039, 
+    IDC_CURRENT_PORT, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_CURRENT_PORT, 0x403, 3, 0
+0x3131, "\000" 
+    IDC_CURRENT_PORT, 0x403, 3, 0
+0x3231, "\000" 
+    IDC_CURRENT_PORT, 0x403, 3, 0
+0x3331, "\000" 
+    IDC_CURRENT_PORT, 0x403, 3, 0
+0x3431, "\000" 
+    IDC_CURRENT_PORT, 0x403, 3, 0
+0x3531, "\000" 
+    IDC_CURRENT_PORT, 0x403, 3, 0
+0x3631, "\000" 
+    IDC_BOUD_RATE, 0x403, 5, 0
+0x3231, 0x3030, "\000" 
+    IDC_BOUD_RATE, 0x403, 5, 0
+0x3432, 0x3030, "\000" 
+    IDC_BOUD_RATE, 0x403, 5, 0
+0x3834, 0x3030, "\000" 
+    IDC_BOUD_RATE, 0x403, 5, 0
+0x3639, 0x3030, "\000" 
+    IDC_BOUD_RATE, 0x403, 6, 0
+0x3431, 0x3034, 0x0030, 
+    IDC_BOUD_RATE, 0x403, 6, 0
+0x3931, 0x3032, 0x0030, 
+    IDC_BOUD_RATE, 0x403, 6, 0
+0x3832, 0x3038, 0x0030, 
+    IDC_BOUD_RATE, 0x403, 6, 0
+0x3333, 0x3036, 0x0030, 
+    IDC_BOUD_RATE, 0x403, 6, 0
+0x3735, 0x3036, 0x0030, 
+    IDC_BOUD_RATE, 0x403, 7, 0
+0x3131, 0x3235, 0x3030, "\000" 
+    IDC_BYTE_SIZE, 0x403, 2, 0
+0x0035, 
+    IDC_BYTE_SIZE, 0x403, 2, 0
+0x0036, 
+    IDC_BYTE_SIZE, 0x403, 2, 0
+0x0037, 
+    IDC_BYTE_SIZE, 0x403, 2, 0
+0x0038, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "Commate"
+    IDR_ProbeTYPE           "\nProbe\nCommate\nCommate Files (*.232)\n.232\nProbe.Document\nCommate.Document"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "Commate"
+    AFX_IDS_IDLEMESSAGE     "若要获取帮助，请按 F1"
+    AFX_IDS_HELPMODEMESSAGE "选择要获取其帮助信息的对象"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "创建新文档\n新建"
+    ID_FILE_OPEN            "打开现有文档\n打开"
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE            "保存活动文档\n保存"
+    ID_FILE_SAVE_AS         "用新名称保存活动文档\n另存为"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "显示程序信息、版本号和版权\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+    ID_HELP_INDEX           "打开帮助\n帮助主题"
+    ID_HELP_FINDER          "列出帮助主题\n帮助主题"
+    ID_HELP_USING           "显示有关如何使用帮助的说明\n帮助"
+    ID_CONTEXT_HELP         "显示有关单击过的按钮、菜单和窗口的帮助信息\n帮助"
+    ID_HELP                 "显示当前任务或命令的帮助信息\n帮助"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "打开此文档"
+    ID_FILE_MRU_FILE2       "打开此文档"
+    ID_FILE_MRU_FILE3       "打开此文档"
+    ID_FILE_MRU_FILE4       "打开此文档"
+    ID_FILE_MRU_FILE5       "打开此文档"
+    ID_FILE_MRU_FILE6       "打开此文档"
+    ID_FILE_MRU_FILE7       "打开此文档"
+    ID_FILE_MRU_FILE8       "打开此文档"
+    ID_FILE_MRU_FILE9       "打开此文档"
+    ID_FILE_MRU_FILE10      "打开此文档"
+    ID_FILE_MRU_FILE11      "打开此文档"
+    ID_FILE_MRU_FILE12      "打开此文档"
+    ID_FILE_MRU_FILE13      "打开此文档"
+    ID_FILE_MRU_FILE14      "打开此文档"
+    ID_FILE_MRU_FILE15      "打开此文档"
+    ID_FILE_MRU_FILE16      "打开此文档"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回上一个窗格\n上一窗格"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_NEW           "为活动文档打开另一个窗口\n新建窗口"
+    ID_WINDOW_ARRANGE       "在窗口底部排列图标\n排列图标"
+    ID_WINDOW_CASCADE       "以重叠方式排列窗口\n层叠窗口"
+    ID_WINDOW_TILE_HORZ     "以非重叠的平铺方式排列窗口\n平铺窗口"
+    ID_WINDOW_TILE_VERT     "以非重叠的平铺方式排列窗口\n平铺窗口"
+    ID_WINDOW_SPLIT         "将活动窗口拆分为多个窗格\n拆分"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "清除选定内容\n清除"
+    ID_EDIT_CLEAR_ALL       "清除全部内容\n全部清除"
+    ID_EDIT_COPY            "复制选定内容并将其放到剪贴板上\n复制"
+    ID_EDIT_CUT             "剪切选定内容并将其放到剪贴板上\n剪切"
+    ID_EDIT_FIND            "查找指定的文本\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一操作\n重复"
+    ID_EDIT_REPLACE         "用其他文本替换特定的文本\n替换"
+    ID_EDIT_SELECT_ALL      "选定整个文档\n全选"
+    ID_EDIT_UNDO            "撤消上一操作\n撤消"
+    ID_EDIT_REDO            "恢复上次撤消的操作\n重做"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "显示或隐藏工具栏\n切换工具栏"
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n切换状态栏"
+    ID_VIEW_AUTOARRANGE     "以网格方式排列图标。"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "更改窗口大小"
+    AFX_IDS_SCMOVE          "更改窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小为图标"
+    AFX_IDS_SCMAXIMIZE      "使窗口最大化显示"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到前一个文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动窗口并提示保存文档"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "将窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务列表"
+    AFX_IDS_MDICHILD        "激活此窗口"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_SMALLICON       "使用小图标显示各项。\n小图标"
+    ID_VIEW_LARGEICON       "使用大图标显示各项。\n大图标"
+    ID_VIEW_LIST            "以列表方式显示各项。\n列表"
+    ID_VIEW_DETAILS         "显示窗口中每一项的相关详细信息。\n详细信息"
+    ID_VIEW_LINEUP          "以网格方式排列图标。"
+    ID_VIEW_BYNAME          "按字母顺序对图标排序。"
+END
+
+STRINGTABLE
+BEGIN
+    ID_POPUP_EXEC_DEBUG     "调式/运行模式切换"
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\Commate.rc2"  // 非 Microsoft Visual C++ 编辑资源
+#include "afxres.rc"         // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

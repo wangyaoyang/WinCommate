@@ -1,0 +1,424 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="头文件\FloatBar">
+      <UniqueIdentifier>{f0be581d-1312-4a87-9d92-0f527ab77cc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx</Extensions>
+    </Filter>
+    <Filter Include="HTML 帮助文件">
+      <UniqueIdentifier>{a0422be3-1218-4b1c-bb70-280bd8d50e42}</UniqueIdentifier>
+      <Extensions>hhp;hhc;hhk;gif;jpg</Extensions>
+    </Filter>
+    <Filter Include="HTML 帮助主题">
+      <UniqueIdentifier>{3dd04c50-a8a3-482b-8a25-f86ef8829ef3}</UniqueIdentifier>
+      <Extensions>htm;html</Extensions>
+    </Filter>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="源文件\FloatBar">
+      <UniqueIdentifier>{8f27d1c7-0949-4818-8735-3da0bed6dbe6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CalculaterDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChildFrm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Commate.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CommateDoc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Communication.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsoleView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CycleSettingDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DataConvertionDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FilterDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RecvDataDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RuntimeView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ShowDataView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SignalListCtrl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SignalListView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="WinThreadExec.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FloatBar\scbarcf.h">
+      <Filter>头文件\FloatBar</Filter>
+    </ClInclude>
+    <ClInclude Include="FloatBar\scbarg.h">
+      <Filter>头文件\FloatBar</Filter>
+    </ClInclude>
+    <ClInclude Include="FloatBar\sizecbar.h">
+      <Filter>头文件\FloatBar</Filter>
+    </ClInclude>
+    <ClInclude Include="EthIfSelDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\bitmap_l.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\bitmap_s.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\bitmapLed.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="hlp\Images\Bullet.gif">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Commate.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Commate.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\CommateDoc.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Toolbar.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\toolbarInput.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\toolbarShortcut.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="hlp\Probe.hhc">
+      <Filter>HTML 帮助文件</Filter>
+    </None>
+    <None Include="hlp\Probe.hhk">
+      <Filter>HTML 帮助文件</Filter>
+    </None>
+    <None Include="hlp\afx_hidd_color.htm">
+      <Filter>HTML 帮助主题</Filter>
+    </None>
+    <None Include="hlp\afx_hidd_fileopen.htm">
+      <Filter>HTML 帮助主题</Filter>
+    </None>
+    <None Include="hlp\afx_hidd_filesave.htm">
+      <Filter>HTML 帮助主题</Filter>
+    </None>
+    <None Include="hlp\afx_hidd_find.htm">
+      <Filter>HTML 帮助主题</Filter>
+    </None>
+    <None Include="hlp\afx_hidd_font.htm">
+      <Filter>HTML 帮助主题</Filter>
+    </None>
+    <None Include="hlp\afx_hidd_newtypedlg.htm">
+      <Filter>HTML 帮助主题</Filter>
+    </None>
+    <None Include="hlp\afx_hidd_replace.htm">
+      <Filter>HTML 帮助主题</Filter>
+    </None>
+    <None Include="hlp\afx_hidp_default.htm">
+      <Filter>HTML 帮助主题</Filter>
+    </None>
+    <None Include="hlp\afx_hidw_dockbar_top.htm">
+      <Filter>HTML 帮助主题</Filter>
+    </None>
+    <None Include="hlp\afx_hidw_status_bar.htm">
+      <Filter>HTML 帮助主题</Filter>
+    </None>
+    <None Include="hlp\afx_hidw_toolbar.htm">
+      <Filter>HTML 帮助主题</Filter>
+    </None>
+    <None Include="hlp\hid_app_about.htm">
+      <Filter>HTML 帮助主题</Filter>
+    </None>
+    <None Include="hlp\hid_app_exit.htm">
+      <Filter>HTML 帮助主题</Filter>
+    </None>
+    <None Include="hlp\hid_context_help.htm">
+      <Filter>HTML 帮助主题</Filter>
+    </None>
+    <None Include="hlp\hid_edit_clear.htm">
+      <Filter>HTML 帮助主题</Filter>
+    </None>
+    <None Include="hlp\hid_edit_clear_all.htm">
+      <Filter>HTML 帮助主题</Filter>
+    </None>
+    <None Include="hlp\hid_edit_copy.htm">
+      <Filter>HTML 帮助主题</Filter>
+    </None>
+    <None Include="hlp\hid_edit_cut.htm">
+      <Filter>HTML 帮助主题</Filter>
+    </None>
+    <None Include="hlp\hid_edit_find.htm">
+      <Filter>HTML 帮助主题</Filter>
+    </None>
+    <None Include="hlp\hid_edit_paste.htm">
+      <Filter>HTML 帮助主题</Filter>
+    </None>
+    <None Include="hlp\hid_edit_redo.htm">
+      <Filter>HTML 帮助主题</Filter>
+    </None>
+    <None Include="hlp\hid_edit_repeat.htm">
+      <Filter>HTML 帮助主题</Filter>
+    </None>
+    <None Include="hlp\hid_edit_replace.htm">
+      <Filter>HTML 帮助主题</Filter>
+    </None>
+    <None Include="hlp\hid_edit_undo.htm">
+      <Filter>HTML 帮助主题</Filter>
+    </None>
+    <None Include="hlp\hid_file_close.htm">
+      <Filter>HTML 帮助主题</Filter>
+    </None>
+    <None Include="hlp\hid_file_mru_file1.htm">
+      <Filter>HTML 帮助主题</Filter>
+    </None>
+    <None Include="hlp\hid_file_new.htm">
+      <Filter>HTML 帮助主题</Filter>
+    </None>
+    <None Include="hlp\hid_file_open.htm">
+      <Filter>HTML 帮助主题</Filter>
+    </None>
+    <None Include="hlp\hid_file_save.htm">
+      <Filter>HTML 帮助主题</Filter>
+    </None>
+    <None Include="hlp\hid_file_save_as.htm">
+      <Filter>HTML 帮助主题</Filter>
+    </None>
+    <None Include="hlp\hid_file_send_mail.htm">
+      <Filter>HTML 帮助主题</Filter>
+    </None>
+    <None Include="hlp\hid_help_index.htm">
+      <Filter>HTML 帮助主题</Filter>
+    </None>
+    <None Include="hlp\hid_help_using.htm">
+      <Filter>HTML 帮助主题</Filter>
+    </None>
+    <None Include="hlp\hid_ht_caption.htm">
+      <Filter>HTML 帮助主题</Filter>
+    </None>
+    <None Include="hlp\hid_ht_nowhere.htm">
+      <Filter>HTML 帮助主题</Filter>
+    </None>
+    <None Include="hlp\hid_next_pane.htm">
+      <Filter>HTML 帮助主题</Filter>
+    </None>
+    <None Include="hlp\hid_prev_pane.htm">
+      <Filter>HTML 帮助主题</Filter>
+    </None>
+    <None Include="hlp\hid_sc_close.htm">
+      <Filter>HTML 帮助主题</Filter>
+    </None>
+    <None Include="hlp\hid_sc_maximize.htm">
+      <Filter>HTML 帮助主题</Filter>
+    </None>
+    <None Include="hlp\hid_sc_minimize.htm">
+      <Filter>HTML 帮助主题</Filter>
+    </None>
+    <None Include="hlp\hid_sc_move.htm">
+      <Filter>HTML 帮助主题</Filter>
+    </None>
+    <None Include="hlp\hid_sc_nextwindow.htm">
+      <Filter>HTML 帮助主题</Filter>
+    </None>
+    <None Include="hlp\hid_sc_prevwindow.htm">
+      <Filter>HTML 帮助主题</Filter>
+    </None>
+    <None Include="hlp\hid_sc_restore.htm">
+      <Filter>HTML 帮助主题</Filter>
+    </None>
+    <None Include="hlp\hid_sc_size.htm">
+      <Filter>HTML 帮助主题</Filter>
+    </None>
+    <None Include="hlp\hid_sc_tasklist.htm">
+      <Filter>HTML 帮助主题</Filter>
+    </None>
+    <None Include="hlp\hid_view_ruler.htm">
+      <Filter>HTML 帮助主题</Filter>
+    </None>
+    <None Include="hlp\hid_view_status_bar.htm">
+      <Filter>HTML 帮助主题</Filter>
+    </None>
+    <None Include="hlp\hid_view_toolbar.htm">
+      <Filter>HTML 帮助主题</Filter>
+    </None>
+    <None Include="hlp\hid_window_all.htm">
+      <Filter>HTML 帮助主题</Filter>
+    </None>
+    <None Include="hlp\hid_window_arrange.htm">
+      <Filter>HTML 帮助主题</Filter>
+    </None>
+    <None Include="hlp\hid_window_cascade.htm">
+      <Filter>HTML 帮助主题</Filter>
+    </None>
+    <None Include="hlp\hid_window_new.htm">
+      <Filter>HTML 帮助主题</Filter>
+    </None>
+    <None Include="hlp\hid_window_split.htm">
+      <Filter>HTML 帮助主题</Filter>
+    </None>
+    <None Include="hlp\hid_window_tile.htm">
+      <Filter>HTML 帮助主题</Filter>
+    </None>
+    <None Include="hlp\hid_window_tile_horz.htm">
+      <Filter>HTML 帮助主题</Filter>
+    </None>
+    <None Include="hlp\hid_window_tile_vert.htm">
+      <Filter>HTML 帮助主题</Filter>
+    </None>
+    <None Include="hlp\hidr_doc1type.htm">
+      <Filter>HTML 帮助主题</Filter>
+    </None>
+    <None Include="hlp\main_index.htm">
+      <Filter>HTML 帮助主题</Filter>
+    </None>
+    <None Include="hlp\menu_edit.htm">
+      <Filter>HTML 帮助主题</Filter>
+    </None>
+    <None Include="hlp\menu_file.htm">
+      <Filter>HTML 帮助主题</Filter>
+    </None>
+    <None Include="hlp\menu_help.htm">
+      <Filter>HTML 帮助主题</Filter>
+    </None>
+    <None Include="hlp\menu_view.htm">
+      <Filter>HTML 帮助主题</Filter>
+    </None>
+    <None Include="hlp\menu_window.htm">
+      <Filter>HTML 帮助主题</Filter>
+    </None>
+    <None Include="hlp\scrollbars.htm">
+      <Filter>HTML 帮助主题</Filter>
+    </None>
+    <None Include="Commate.reg" />
+    <None Include="轮询_md.232" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Commate.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\TmnCpps\Calculat.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CalculaterDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ChildFrm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Commate.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CommateDoc.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Communication.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsoleView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\TmnCpps\CRC.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CycleSettingDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DataConvertionDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FilterDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="RecvDataDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="RuntimeView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ShowDataView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SignalListCtrl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SignalListView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="WinThreadExec.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FloatBar\scbarcf.cpp">
+      <Filter>源文件\FloatBar</Filter>
+    </ClCompile>
+    <ClCompile Include="FloatBar\scbarg.cpp">
+      <Filter>源文件\FloatBar</Filter>
+    </ClCompile>
+    <ClCompile Include="FloatBar\sizecbar.cpp">
+      <Filter>源文件\FloatBar</Filter>
+    </ClCompile>
+    <ClCompile Include="EthIfSelDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuildStep Include="res\Commate.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Resource.h">
+      <Filter>头文件</Filter>
+    </CustomBuild>
+    <CustomBuild Include="hlp\Probe.hhp">
+      <Filter>HTML 帮助文件</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>
