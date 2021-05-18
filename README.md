@@ -3,4 +3,4 @@ MFC Application. Windows version of commate, similar to comm assistant, supports
 
 
 P.S.
-The original name of the project folder was not 'WinCommate', actually just 'Commate'. You may need to rename the project's folder to it's original name before building the project.
+The original name of the project folder was not 'WinCommate', actually just 'Commate'. You may need to rename the project's folder back to it's original name before building the project.
